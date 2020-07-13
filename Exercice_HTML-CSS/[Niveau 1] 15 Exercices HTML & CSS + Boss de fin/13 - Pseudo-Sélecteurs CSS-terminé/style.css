@@ -1,0 +1,68 @@
+a:hover
+{
+  text-decoration: none;
+  color: white; 
+  background-color: #7E3661; 
+}
+a:visited
+{
+  color: #FCB941;
+  font-size: 1.5em;
+}
+
+
+
+caption
+
+{
+  font-size: 1.5em;
+  text-transform: capitalize;
+
+}
+
+
+
+th, td
+{
+  padding: 10px;
+  text-align:center;
+  
+}
+
+thead tr:nth-child(0n + 1) th:nth-child(0n + 2)
+{
+  color: blue;
+  font-size: 2em;
+}
+
+tbody tr:nth-child(even)
+{
+  background-color: #FCB941;
+}
+tbody tr:nth-child(odd)
+{
+  background-color: #F1654C;
+}
+
+tbody tr:nth-child(odd) td:last-child
+{
+  background-color: #8870FF;
+  color: #fff;
+}
+tr:nth-child(odd) td:first-child
+{
+  background-color: #7E3661;
+  color: #fff;
+}
+
+tr:nth-child(even) td:first-child
+{
+  background-color:#888888;
+  color: #fff;
+}
+
+th[rowspan]:last-child
+{
+  border-right: blue 1px solid;
+  border-top: blue 1px solid;
+}

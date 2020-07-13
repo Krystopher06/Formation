@@ -1,0 +1,89 @@
+
+
+
+
+
+.list1, .list2, .list3
+
+{
+    
+    list-style-type: none ;
+}
+
+
+
+
+ul.list1 li::before
+
+{
+    position: relative;
+    right: 5px;
+    display: inline-block;
+    content: "";
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 7px solid black;
+
+    width: 0px;
+    height: 0;
+    
+    
+}
+    
+
+
+ul.list2 li::before
+
+{
+    position: relative;
+    right: 5px;
+    display: inline-flex;
+    justify-content: center;
+    content: "";
+    height: 5px;
+    width: 5px;
+    border: 2px solid blue;
+    -ms-transform: rotate(45deg); /* Internet Explorer */
+    -moz-transform: rotate(45deg); /* Firefox */
+    -webkit-transform: rotate(45deg); /* Safari et Chrome */
+    -o-transform: rotate(45deg); /* Opera */
+}
+
+    
+
+.list3
+{
+    counter-reset: liste; /*on creer un compter liste qui a la valeur  0  /  il faut le mettre a un element unique */
+}
+
+.list3 li
+{
+    counter-increment: liste; /* Pour chaque Li on increment la valeur li */
+}
+
+ul.list3 li::before
+
+{
+   
+    display: inline-flex;
+    justify-content: center;
+    color: white;
+    position: relative;
+    right: 5px;
+    
+    content:  counter(liste); /* on increment en inserant la valeur before */
+    border-radius: 17px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid blue;
+    background: blue;
+    text-align: center;
+    align-items: center;
+   
+  
+
+    
+    
+   
+}
+

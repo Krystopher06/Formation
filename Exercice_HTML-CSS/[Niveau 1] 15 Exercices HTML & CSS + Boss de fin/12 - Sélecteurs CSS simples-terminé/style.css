@@ -1,0 +1,36 @@
+#layout
+{
+    margin: auto;
+    background-color: black;
+    width: 500px;
+    text-align: center;
+    padding: 5px;
+    
+
+}
+h2
+{
+    color: white;
+}
+
+.gauche
+{
+    color:white;
+   text-align: left;
+}
+.droite
+{
+    color:white;
+    text-align: right;
+    
+    
+}
+
+button
+{
+    color: white;    
+    margin: auto;
+    background-color: blue;
+
+}
+
