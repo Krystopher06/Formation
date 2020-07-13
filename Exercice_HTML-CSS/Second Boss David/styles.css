@@ -1,0 +1,43 @@
+#nav
+{
+    padding: 0; margin: 0
+    ;
+}
+
+#nav 
+{
+    display: flex;
+    list-style: none;
+    padding: 10px;
+}
+
+
+li:hover
+{
+    
+    transition: linear 0.2s;
+
+}
+
+
+.lien
+{
+    text-decoration: none;
+    border: 1px black solid;
+    text-align: center;
+    
+}
+
+.lien:hover
+{
+    border-bottom: 5px solid red;
+    transform: t;
+    transition: linear 0.2s;
+    background-color: cornflowerblue;
+}
+
+.lien:focus
+{
+    background-color: crimson;
+
+}
