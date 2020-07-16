@@ -1,6 +1,6 @@
 /* ====================================
-   CSS setup – ne rien modifier
-   éditer plus bas
+   CSS setup ï¿½ï¿½ne rien modifier
+   ï¿½diter plus bas
  * ==================================== */
 
 body { margin: 0; padding: 0; border: 0; }
@@ -14,6 +14,47 @@ li:nth-of-type(5n) { background-color: #e74c3c; }
 a { color: white; font-size: 16px; line-height: 50px; text-decoration: none; }
 
 /* ====================================
-   éditer à partir d'ici
+   ï¿½diter ï¿½ partir d'ici
  * ==================================== */
 
+/* Flex "align-items" Fait sauter les valeurs " height" ( min-height, max-height, etc...) */
+
+ul
+{
+    display: flex;
+    align-items: center;
+
+}
+
+ li
+{
+  
+  width: 100%;
+
+  
+}
+
+a
+{
+  width: 100%;
+  display: block;
+}
+
+a:hover
+{
+  padding: 30px 0;
+}
+
+
+@media screen and (max-width: 600px)
+{
+
+  ul
+  {
+    display: inline-block;
+    flex-direction: column;
+    width: 100%;
+
+  }
+
+}

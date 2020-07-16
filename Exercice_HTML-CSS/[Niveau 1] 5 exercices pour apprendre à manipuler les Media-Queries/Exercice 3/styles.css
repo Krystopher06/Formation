@@ -1,6 +1,6 @@
 /* ====================================
-   CSS setup – ne rien modifier
-   éditer plus bas
+   CSS setup ï¿½ï¿½ne rien modifier
+   ï¿½diter plus bas
  * ==================================== */
 
 body { border: 0; margin: 0; padding: 0; }
@@ -14,6 +14,57 @@ h1, p { margin: 0 0 15px 0; }
 nav a { border-bottom: 1px solid rgba(255,255,255,.3); color: white; display: block; line-height: 40px; text-decoration: none; }
 
 /* ====================================
-   éditer à partir d'ici
+   ï¿½diter ï¿½ partir d'ici
  * ==================================== */
+
+
+
+
+@media screen and (max-width: 599px)
+{
+  header > h1
+  {
+    line-height: 30px;
+    font-size: 25px;
+  }
+  main
+  {
+    display:flex;
+    flex-direction:  column-reverse;
+  
+  }
+
+
+ 
+}
+
+
+@media screen and (min-width: 600px)
+{
+
+
+  
+  main
+  {
+    display: flex; 
+    
+  }
+  nav
+  {
+    width: 200px;
+  }
+ 
+  article
+  {
+    width: 100%;
+  }
+
+
+
+
+
+
+
+
+
 
