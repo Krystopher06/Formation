@@ -29,44 +29,51 @@ article > div { margin-left: 8px; }
 /*
  * Votre code CSS ci-dessous
  */
-@media screen
+@media screen  and (orientation: portrait)
 {
-    .question_1
-    {
-        orientation: portrait;
-    }
-    .clearfix
+
+    #question_1 .clearfix>div
+
     {
         background-color: red;
     }
-}
+    
+}   
 
 
-@media screen and (min-width: 960px)
+
+@media screen and (max-width: 960px)
 {
-    .clearfix
+    #question_2 .clearfix>div
+
     {
-        display: flex;
-        flex-flow: column;
+        
         width: 100%;
     }
-}
-
-@media screen and (min-width: 640px ) and ( max-width: 960px )
-{
-    .clearfix
-    {
-        border: 5px solid rgb(13, 228, 228);
-        transition: linear 0.5s;
-    }
 
 }
 
-@media screen and (min-width: 640px) and ( max-width: 960px ) , (min-width: 1280px)
-{
-    .clearfix
-    {
-        background-color: green;
-        transition: linear 0.5s;
+@media screen and (min-width:640px) and (max-width:960px) {
+    #question_3 .clearfix>div {
+        transition: 5s;
+        transform: rotate(360deg);
     }
 }
+
+@media screen and (min-width:640px) and (max-width:960px),
+(min-width:1280px) {
+    #question_4 .clearfix>div {
+        background: blue;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

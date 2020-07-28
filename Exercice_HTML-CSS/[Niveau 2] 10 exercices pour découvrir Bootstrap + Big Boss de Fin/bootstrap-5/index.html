@@ -1,19 +1,84 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>bootstrap 5</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css">
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js"></script>
 
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <script type="text/javascript" src="script.js"></script>
-    </head>
-    <body>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>bootstrap 5</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js"></script>
 
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
 
-    </body>
+<body>
+
+    <h1>Navbar horizontale</h1>
+    <div class="container-fluid p-0">
+        <div class="row">
+            <div class="bg-dark  col-12">
+                <ul class=" nav justify-content-center">
+                    <li class="nav-item"> <a class="nav-link active" href="#"> Accueil</a> </li>
+                    <li class="nav-item"> <a class="nav-link active" href="#"> A propos</a> </li>
+                    <li class="nav-item"> <a class="nav-link active" href="#"> Nous contacter</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <h1> Nav verticale à gauche </h1>
+    <div class="container-fluid p-0">
+        <div class="row">
+            <div class="bg-secondary  col-3">
+                <ul class=" nav flex-column text-white">
+                    <li class="nav-item"> <a class="nav-link active text-white" href="#"> Accueil</a> </li>
+                    <li class="nav-item"> <a class="nav-link active text-white" href="#"> A propos</a> </li>
+                    <li class="nav-item"> <a class="nav-link active text-white" href="#"> Nous contacter</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <h1> Nav avec contenu </h1>
+    <div class="container-fluid p-0">
+        <div class="row">
+            <div class="bg-secondary  col-3 ">
+                <div class=" row nav  flex-column  nav-pills" id="nav-pills-tab" role="tablist"
+                    aria-orientation="vertical">
+
+                    <a class="nav-link  text-white py-3" id="accueil-tab" data-toggle="pill" href="#accueil" role="tab"
+                        aria-controls="accueil" aria-selected="true">Accueil</a>
+                    <a class="nav-link text-white py-3" id="a-propos-tab" data-toggle="pill" href="#a-propos" role="tab"
+                        aria-controls="a-propos" aria-selected="false">A propos</a>
+                    <a class="nav-link text-white py-3" id="nous-contacter-tab" data-toggle="pill" href="#nous-contacter"
+                        role="tab" aria-controls="nous-contacter" aria-selected="false">Nous contacter</a>
+
+                </div>
+            </div>
+        
+       
+
+            <div class="tab-content col-9" id="v-pills-tabContent">
+                <div class="tab-pane fade " id="accueil" role="tabpanel" aria-labelledby="accueil-tab">Lorem ipsum dolor
+                    sit amet consectetur adipisicing elit.
+                    Labore
+                    perspiciatis natus exercitationem magni adipisci? Recusandae sit, beatae alias magni, impedit
+                    fugiat
+                    quaerat non molestiae delectus error animi repudiandae doloribus quis?</div>
+                <div class="tab-pane fade" id="a-propos" role="tabpanel" aria-labelledby="a-propos-tab">
+                    atus exercitationem magni adipisci? Recusandae sit, </div>
+                <div class="tab-pane fade" id="nous-contacter" role="tabpanel" aria-labelledby="nous-contacter-tab">
+                    .c..</div>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
 </html>

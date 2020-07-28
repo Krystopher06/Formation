@@ -1,0 +1,142 @@
+body
+
+{
+
+    
+    width: 100%;
+    height: 50%;
+
+
+}
+
+header
+
+{
+    
+    background-color: #2F4858;
+    color: white;
+    display: flex;
+    align-content: center;
+   
+}
+
+header div.base
+
+{
+    margin-left: 40%;
+    text-align: center;
+    line-height: 28px;
+}
+
+
+
+header h1
+{
+    font-size: 18px;
+}
+header p
+{
+    font-style: italic;
+    font-size: 12px;
+}
+header img
+{
+   margin: 20px 0px 0px 30px;
+}
+.group2
+{
+   
+    width: 100%;
+    display: flex;
+}    
+
+aside
+
+{
+
+    background-color: #86BBD8;
+    color: rgb(71, 71, 70);
+    align-content: center;
+    flex-direction: column;
+    width: 30%;
+    margin:
+
+}
+
+aside div li
+{
+    list-style-type: none;
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+aside div h3
+{
+    margin-left: 15px;
+    font-size: 16px;
+    line-height: 25px;
+    
+}
+
+aside 
+
+{
+    border-top: 3px solid #9FE694;
+
+
+    
+}
+
+section
+
+{
+    flex-direction: column;
+    align-content: center;
+    width: 70%;
+background-color: #FAF8F8;
+}
+
+section  p:nth-of-type(2n+1)
+
+{
+
+    font-style: italic;
+
+}
+
+
+
+.exp
+
+{
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+
+section div h3
+
+{
+    border-bottom: 3px solid #9FE694;
+    width: 50%;
+    
+}
+
+section div h3.poste
+
+{
+    margin-left: 20px;
+    margin-top: 40px;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+section p
+
+{
+    margin-left: 20px;
+}
+

@@ -1,0 +1,63 @@
+body{
+    width: 100%;
+
+}
+#nav{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.deroulant{
+    color: gray;
+    margin: 0px 20px;
+    font-size: 25px;
+}
+
+.deroulant, a
+{
+    text-decoration: none;
+}
+
+.sous{
+   /* Pour avoir une transition ne fonctionne pas avec " Display " */
+
+    margin:auto;
+    text-align: center;
+    font-size: 15px;
+    height: 0; /* C'est la hauteur initial */
+    overflow: hidden; /* ça cache les élements qui dépasse la hauteur (height: 0 donc caché ) */
+    transition: height 0.5s  ease;
+}
+.sous li{
+    padding-top: 24px;
+}
+.sous li a{
+    background-color: gray;
+    color: white;
+    padding: 10px;
+}
+li:hover .sous{
+
+margin: 10px 0px;
+height: 200px; /* La hauteur final, donc le contenue dépasse plus donc le contenue est affiché */
+}
+
+
+.sous li a:hover
+{
+    background-color: rgba(1, 100, 250, 0.726);
+}
+
+li:hover .deroulant /* Si il y a un effet sur le parent, il y sera aussi sur l'enfant */
+{
+    border-bottom: 4px solid rgba(1, 100, 250, 0.726);
+    padding-bottom: 16px;
+}
+
+
+
+
+

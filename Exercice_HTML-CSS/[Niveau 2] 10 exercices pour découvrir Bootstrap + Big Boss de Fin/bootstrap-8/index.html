@@ -1,18 +1,211 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Bootstrap 8</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css">
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js"></script>
 
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <script type="text/javascript" src="script.js"></script>
-    </head>
-    <body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap 8</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js"></script>
 
-    </body>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+
+
+
+
+
+  <h2> Partie 1 Collapse</h2>
+
+  <div class="container">
+    <div class="row" >
+
+
+
+
+
+      <button class="btn btn-primary col-3" data-toggle="collapse" href="#multiCollapseExample1" role="button"
+        aria-expanded="false" aria-controls="multiCollapseExample1">Bouton 1</button>
+      <button class="btn btn-primary col-3" type="button" data-toggle="collapse" data-target="#multiCollapseExample2"
+        aria-expanded="false" aria-controls="multiCollapseExample2">Bouton 2
+      </button>
+      <button class="btn btn-primary col-3" type="button" data-toggle="collapse" data-target="#multiCollapseExample3"
+        aria-expanded="false" aria-controls="multiCollapseExample2">Bouton 3</button>
+      <button class="btn btn-primary col-3" type="button" data-toggle="collapse" data-target=".multi-collapse"
+        aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Bouton ALL </button>
+
+      <div class="row ">
+        <div class="col-3">
+          <div class="collapse multi-collapse " id="multiCollapseExample1" >
+            <div class="card card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+              Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+              proident.
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="collapse multi-collapse " id="multiCollapseExample2">
+            <div class="card card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+              Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+              proident.
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="collapse multi-collapse " id="multiCollapseExample3">
+            <div class="card card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+              Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+              proident.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <h2> Partie 2 Accordeon</h2>
+
+
+
+
+  <div class="container ">
+
+    <div class="" id="accordion">
+      <div class="card">
+        <div class="card-header p-0" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link w-100 p-4" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+              aria-controls="collapseOne">
+              Premier Element
+            </button>
+          </h5>
+        </div>
+
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+            officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+            wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
+            excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+            you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header p-0" id="headingTwo">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed p-4 w-100" data-toggle="collapse" data-target="#collapseTwo"
+              aria-expanded="false" aria-controls="collapseTwo">
+              Deuxieme Element
+            </button>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+            officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+            wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
+            excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+            you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header p-0" id="headingThree">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed p-4 w-100" data-toggle="collapse" data-target="#collapseThree"
+              aria-expanded="false" aria-controls="collapseThree">
+              Troisieme Element
+            </button>
+          </h5>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+            officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+            wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
+            excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+            you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+  <h2> Partie 3 Apparence Collapse avec Fonction Accordeon </h2>
+
+  <div class="container">
+    <div class="row" id="test">
+
+
+
+
+
+      <button class="btn btn-primary col-4" data-toggle="collapse" href=" #CollapseExample1" role="button"
+        aria-expanded="false" aria-controls="CollapseExample1">Bouton 1</button>
+      <button class="btn btn-primary col-4" type="button" data-toggle="collapse" data-target="#CollapseExample2"
+        aria-expanded="false" aria-controls="CollapseExample2">Bouton 2
+      </button>
+      <button class="btn btn-primary col-4" type="button" data-toggle="collapse" data-target="#CollapseExample3"
+        aria-expanded="false" aria-controls="CollapseExample2">Bouton 3</button>
+
+
+      <div class="row ">
+        <div class="col-4">
+          <div class="collapse " id="CollapseExample1" data-parent="#test">
+            <div class="card card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+              Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+              proident.
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="collapse " id="CollapseExample2"data-parent="#test">
+            <div class="card card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+              Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+              proident.
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="collapse " id="CollapseExample3"data-parent="#test">
+            <div class="card card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+              Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+              proident.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+</body>
 </html>

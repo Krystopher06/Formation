@@ -1,0 +1,117 @@
+.switch
+{
+    position: relative; /* Qui est donc le parent */
+    display: inline-block;
+    background-color: teal;
+    height: 50px;
+    width: 100px;
+    border-radius: 25px;
+}
+
+
+
+
+#box
+{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+   
+}
+
+
+.slider
+{
+    position: absolute; /* qui est donc l'enfant de ".switch" */
+    top: 0; /* En mettant top / left à 0, ça nous permettra de superposer notre slide ( ".slider" ) sur notre "#box" */ 
+    left: 0;
+    background-color: green;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+    line-height: 50px;
+    pointer-events: none; /* Nous permet de cliquer à travers "slider" afin de pouvoir cliquer sur la box */ 
+    border-radius: 25px;
+    
+    
+}
+
+.round
+{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    background-color: white;
+    border-radius: 25px;
+    left: 51px;
+    bottom: 0;
+    pointer-events: none;
+    transition-duration: 0.4s;
+    box-shadow: 1px 01px #696969;
+}
+#box:checked ~ .slider      /* :checked Permet de faire une action au moment qu'on valide la case " coché "*/ 
+                            /* tout les elements checked de box seront synchro avec ".slider" */
+{
+    background-color: red;
+    transition-duration: 0.4s;
+}
+#box:checked ~ .round
+{
+    transition-duration: 0.4s;
+    transform: translateX(-55px);
+   -webkit-transform: translateX(-55px)
+   
+}
+
+.non
+{
+ position: absolute;
+ bottom: 15px;
+ left: 65px;
+ color: white;
+ opacity: 0;
+ transition-duration: 0.4s;
+ font-size: 20px;
+}
+
+.oui
+{
+    position: absolute;
+    bottom: 15px;
+    color: white;
+    opacity: 1;
+    transition-duration: 0.4s;
+    font-size: 20px;
+}
+
+#box:checked ~ .oui
+{
+    opacity: 0;
+    transition-duration: 0.4s;
+    
+}
+
+
+#box:checked ~ .non
+{
+    opacity: 1;
+    transition-duration: 0.4s;
+}
+
+
+
+
+
+.switch input           /*permet de cacher le carré pour cocher */
+
+
+
+
+
+
+
+input:checked 
+{
+   
+}

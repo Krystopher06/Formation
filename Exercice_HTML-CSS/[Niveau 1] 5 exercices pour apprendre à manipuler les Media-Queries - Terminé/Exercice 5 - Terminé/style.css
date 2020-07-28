@@ -15,8 +15,9 @@ ul {
 }
 
 li {
-  border: none;
-  display: inline-block;
+ border: none;
+ display: flex;
+ flex-direction: column;
 }
 
 li a {
@@ -35,8 +36,9 @@ li a:hover {
 }
 
 #container div {
-	display: inline-block;
-	width: 30%;
+	display: flex;
+  flex-direction:column ;
+  width: 100%;
 }
 	
 footer {
@@ -52,31 +54,21 @@ footer {
 
 
 
-
-@media screen and (max-width : 480px)
+/* au dessus de 480px de largeur d'écran: */
+@media screen and (min-width : 480px)
 {
-  ul
-  {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
 
-  }
   
-   li a
+   li 
   {
    
-    width: 100%;
-    padding: 1em 0;
-    
-    
-  
+ display: inline-block;
   }
 
   #container div
   {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+    display: inline-block;
+    
+    width: 30%;
     
   }
