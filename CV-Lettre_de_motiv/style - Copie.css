@@ -1,0 +1,124 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Oxygen', sans-serif;
+    
+}
+
+
+a.active,a:hover{
+text-decoration: none;
+}
+
+.nav_bar
+{
+background-color: #000000;
+height: 50px;
+width: 100%;
+position: fixed;
+opacity: 80%;
+}
+
+.nav_bar .nav_area
+{
+    float: right;
+    margin-right: 20px;
+}
+
+.nav_bar .nav_area li
+{
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 5px;
+}
+
+.nav_bar .nav_area li a
+{
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+.nav_area li a.active, .nav_area li a:hover
+{
+    background: #1b9bff;
+    transition: .3s;
+  }
+
+  .checkbtn
+  {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 50px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check
+  {
+    display: none;
+  }
+  
+  @media (max-width: 1024px)
+  {
+    .nav_bar
+{
+background-color: #000000;
+height: 50px;
+width: 100%;
+position: fixed;
+opacity: 80%;
+}
+
+.nav_bar .nav_area
+{
+    float: right;
+    margin-right: 20px;
+}
+
+.nav_bar .nav_area li
+{
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 5px;
+}
+
+.nav_bar .nav_area li a
+{
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+.nav_area li a.active, .nav_area li a:hover
+{
+    background: #1b9bff;
+    transition: .3s;
+  }
+
+  .checkbtn
+  {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 50px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check
+  {
+    display: none;
+  }
+  }
+  
+  

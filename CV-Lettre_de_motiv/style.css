@@ -1,0 +1,475 @@
+*
+{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body
+{
+  font-family: 'Oxygen', sans-serif;  
+  
+}
+
+a.active,a:hover
+{
+  text-decoration: none;
+}
+
+
+
+.fade-in
+{
+  animation: fadeIn 4s;
+}
+.fade-out
+{
+  animation: fadeIn 4s;
+}
+@keyframes fadeIn
+{
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut
+{
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.nav_bar
+{
+  background-color: transparent;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  opacity: 80%;
+  z-index: 1;
+}
+
+.nav_bar .nav_area li a
+{
+  color: red;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.nav_area li a.active, .nav_area li a:hover
+{
+  background: white;
+  transition: .3s;
+}
+.home_1
+{
+  font-size: 15px;
+
+ 
+}
+
+.checkbtn
+{
+  font-size: 35px;
+  color: red;
+  float: right;
+  line-height: 50px;
+  margin-right: 20px;
+  cursor: pointer;
+  display: block;
+}
+#check
+{
+  display: none;
+}
+  
+  
+.nav_area
+{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #000000;
+  
+  text-align: center;
+  opacity: 0;
+  transition-duration: 0s;
+  z-index: -1;
+  
+}
+.nav_bar .nav_area li
+{
+  display: block;
+  margin: 50px 0;
+  line-height: 30px;
+}
+.nav_bar .nav_area li a
+{
+  font-size: 20px;
+}
+
+
+
+#check:checked ~ ul
+{
+  
+  opacity: 1 ;
+  transition: opacity 0.5s;
+}
+
+.parallax-outer
+{
+  width: 100%;
+}
+#home
+{
+
+  width: 100%;
+  padding: 0 20px;
+background-color: #282424;
+
+position: relative;
+
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+text-align: center;
+
+opacity: 1;
+}
+
+strong
+{
+  font-weight: 900;
+}
+
+header {
+  color: white;
+  font-size: 25px;
+  font-weight:  300;
+  font-style: italic;
+  padding-top: 33px;
+
+}
+
+h1
+{
+  font-size: 50px;
+  margin: 20px 0px;
+  padding-top: 15px;
+  color: red;
+}
+#header-text {
+  font-size: 25px;
+  font-weight: 200;
+  margin: 70px 0px 110px 0px;
+  padding: 10px 5px;
+  color: white;
+  white-space: normal;
+}
+
+
+
+.menu-1
+{
+
+  justify-content: space-between;
+  display: flex;
+  text-align: center;
+ 
+}
+.menu-1:after
+{
+  
+  text-align: justify;
+  
+}
+
+i
+{
+  color: white;
+}
+.item-1 
+{
+  
+color: white;
+  font-size: 30px;
+  justify-content: space-around;
+  width: 100%;
+  text-align: center;
+  padding: 0 3px;
+}
+
+.item-1 > p
+{
+  color: white;
+  white-space: normal;
+ font-size: 20px;
+
+}
+.boutton-menu
+{
+  color: white;
+}
+
+h2
+{
+  font-size: 32px ;
+}
+
+#about
+{
+  
+  padding: 30px 20px;
+  width: 100%;
+  text-align: justify;
+  
+}
+      /***** Première version avec Float *****/
+      /*   
+      
+      
+      #a-propos
+      {
+        display: block;
+        width: 100%;
+      }
+                          
+      .box-img-profil
+      {
+      }
+
+      #img-profil
+      {
+      
+        display: inline-block;
+        float: left;
+        max-width: 25%;
+        height: auto;
+      }
+
+     
+      .about-list
+      {
+        display: inline;
+        width: 80%;
+        text-align: justify;
+        font-size: 18px; 
+      }
+
+      .resume
+      {
+        display: inline;
+        width: 100%;
+        font-size: 15px;
+      }
+
+      */
+
+ /***** Deuxième version *****/
+
+
+
+.about
+{
+  text-align:initial;
+}
+
+ #a-propos
+  {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+  }
+  .box-img-profil
+  {
+    text-align: center;
+  }
+
+  #img-profil
+  {
+  
+    display: inline-block;
+  
+    max-width: 70%;
+    height: auto;
+    
+    
+  }
+
+
+
+  .about-list
+  {
+    display: inline-block;
+    width: 100%;
+    text-align: justify;
+    font-size: 18px; 
+    padding: 10px 0px;
+    
+  }
+
+  .resume
+  {
+    display: inline-block;
+    width: 100%;
+    font-size: 15px;
+    
+  }
+
+ #buttons-container
+ {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   padding: 75px 0px;
+   width: 100%;
+ }
+
+#contact-button , #cv
+{
+  margin: 20px 0px;
+ 
+  border-radius: 50px;
+  color: black;
+  background-color: black;
+}
+#contact-button
+{
+  
+  padding: 10px 50px;
+  background-color: rgb(3, 160, 3);
+}
+
+
+#cv
+{
+ 
+ 
+  padding: 10px 10px;
+  background-color: rgb(45, 57, 92);
+}
+
+
+
+
+
+
+
+
+
+/* Une div pour une image en background, si la div est vide, elle fera 0 ( ajouter des dimensions ) */
+
+  
+  
+@media only screen and (min-width: 1024px)
+{
+    
+    .nav_bar
+    {
+      background-color: #000000;
+      height: 50px;
+      width: 100%;
+      position: fixed;
+      opacity: 80%;
+    }
+    .nav_area
+    {
+      position: fixed;
+      width: 100%;
+      height: 0vh;
+      background: #000000;
+      
+      opacity: 1;
+      text-align: end;
+     
+      z-index: -1;
+    }
+    #check:checked ~ ul
+{
+  opacity: 1;
+  transition-duration: 0s;
+}
+    .nav_bar .nav_area
+    {
+      float: right;
+      margin-right: 20px;
+    }
+    
+    .nav_bar .nav_area li
+    {
+      display: inline-block;
+      line-height: 50px;
+      margin: 0 10px;
+    }
+    
+    .nav_bar .nav_area li a
+    {
+      color: red;
+      font-size: 17px;
+      text-transform: uppercase;   
+    }
+    .contact-pad
+    {
+      margin-right:35px
+    }
+    
+    .nav_area li a.active, .nav_area li a:hover
+    {
+      background: white;
+      transition: .5s;
+    }
+    
+    .checkbtn
+    {
+      display: none;
+    }
+    #check
+    {
+      display: none;
+    }
+      
+    .item-1 
+    {
+      
+      color: white;
+      font-size: 50px;
+      justify-content: space-around;
+      width: 100%;
+
+    }
+
+    header
+    {
+      color: white;
+      font-size: 45px;
+      font-weight:  300;
+      font-style: italic;
+      padding-top: 80px;
+
+    }
+
+    h1
+    {
+      font-size: 66px;
+      margin: 0px 0px;
+      padding-top: 15px;
+      color: red;
+    }
+    #header-text
+    {
+      font-size: 35px;
+      margin: 70px 0px 110px 0px;
+      padding: 10px 5px;
+    }
+}

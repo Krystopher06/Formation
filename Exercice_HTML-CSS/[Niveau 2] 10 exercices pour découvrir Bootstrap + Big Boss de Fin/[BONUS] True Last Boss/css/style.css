@@ -1,0 +1,110 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+a:hover
+{
+    text-decoration: none
+}
+header
+{
+   ;
+}
+
+
+.titre
+{
+     
+    max-width: 50%;
+    height: auto;
+    
+    
+}
+
+#home
+{
+    background: linear-gradient(to right, #ffcc00 0%, #6600ff 100%); 
+    height: ;
+}
+
+
+.text-home
+{
+    line-height: 75px;
+    
+}
+
+.text-home-1
+{
+   font-size: 50px;
+   line-height: 50px;
+}
+
+.text-home-2
+{
+   font-size: 45px;
+}
+
+ .mobile
+    {
+        display: none;
+    }
+
+
+
+
+
+.bar-play
+{
+
+    padding: 3px 10px;
+    border: 1px solid white;
+    border-radius: 25px;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 768px)
+{
+    .mobile
+    {
+        display: block;
+    }
+
+
+}
