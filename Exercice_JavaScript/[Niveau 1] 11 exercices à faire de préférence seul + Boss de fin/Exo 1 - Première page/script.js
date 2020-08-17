@@ -1,0 +1,1 @@
+alert("Hello world") //on aurait pu écrire  dans le html directement
