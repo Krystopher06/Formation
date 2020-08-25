@@ -1,12 +1,73 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8">
-        <title>Exo 8 JS</title>
 
-    </head>
-    <body>
-        <h1>Exercice 8 : You get what you switch</h1>
-        <p>Le switch</p>
-    </body>
+<head>
+    <meta charset="utf-8">
+    <title>Exo 8 JS</title>
+
+</head>
+
+<body>
+    <h1>Exercice 8 : You get what you switch</h1>
+    <p>Le switch</p>
+
+
+
+
+    <script>
+   
+     
+        
+
+
+      
+       console.log("Acceuil du client")
+        alert('Bonjour cher client !');
+            console.log("Acceuil du client")
+            var choix = prompt("Veuillez entrer le produit que vous souhaiter choisir");
+
+            switch (choix) {
+                case "Tomate":
+                    console.log("Choix de la Tomate ! Bon pour la santé et vegan")
+                    break
+                case "Oeuf":
+                    console.log("Choix de l'Oeuf ! D'origine animale même si ça n'est pas directement leur viande")
+                    break
+                case "Lait":
+                    console.log("Choix du Lait ! D'origine animale même si ça n'est pas directement leur viande")
+                    break
+                case "Tofu":
+                    console.log("Choix du Tofu ! Issu du soja donc vegan mais sa culture intensive n'est pas top niveau environnement")
+                    break
+                case "Miel":
+                    console.log("Choix du Miel ! D'origine animale, non vegan")
+                    break
+                case "Foie gras":
+                    console.log("Choix du Foie gras D'origine animale, non vegan  ")
+                    break
+                default:
+                    console.log("Veuillez taper un produit de la liste !")
+                    var choix = prompt("Veuillez recommencer")
+                    break
+            }
+        
+
+
+
+        /*
+            alert Bonjour cher client !
+
+            prompt Veuillez entrer le
+            produit que vous souhaiter choisir
+
+            selon ce qu'il prend il faudra
+            lui dire si c'est d'origine animale
+
+
+
+
+        */
+    </script>
+</body>
+
 </html>
