@@ -56,6 +56,7 @@ a.active,a:hover
   position: fixed;
   opacity: 80%;
   z-index: 1;
+  
 }
 
 .nav_bar .nav_area li a
@@ -103,9 +104,16 @@ a.active,a:hover
   text-align: center;
   opacity: 0;
   transition-duration: 0s;
-  z-index: -1;
-  
+  z-index: -1000;
+  display: ;
+ /*  width: 0;
+  height: 0;
+  overflow: hidden; */
 }
+.active{
+  display: block;
+}
+
 .nav_bar .nav_area li
 {
   display: block;
@@ -183,7 +191,7 @@ h1
 {
 
   justify-content: space-between;
-  display: flex;
+  display: block;
   text-align: center;
  
 }

@@ -1,0 +1,122 @@
+1. La base est vierge. Réalisez l'insertion d'un jeu de données dans les différentes
+tables. Les données seront définies par vous-même à votre convenance
+
+INSERT INTO `client` (codeClient, nom, cpclient, villeclient, tel)
+VALUES
+("id1", "Adeline", "83260", "La-Crau", "0622041412"),
+("id2", "Krystopher", "06600", "Grasse", "0600000000"),
+("id3", "Noemy", "06500", "Mouans-Sartoux", "0600000001"),
+("id4", "Florian", "06110", "Le-Cannet", "0600000002"),
+("id5", "Cindy", "06400", "Cannes", "0600000003")
+
+
+INSERT INTO `echantillon` (codeEchantillon, dateEntree, codeClient)
+VALUES
+(1, '2010-02-28', "id1"),
+(2, '2007-02-01', "id2"),
+(3, '2014-10-03', "id3"),
+(4, '2015-10-05', "id4"),
+(5, '2016-05-10', "id5")
+
+INSERT INTO typeanalyse (designation, prixTypeAnalyse)
+VALUES
+("type1", 70.50),
+("type2", 90.50),
+("type3", 60.50)
+
+
+INSERT INTO realiser (codeEchantillon, refTypeAnalyse, dateRealisation)
+VALUES
+(1, 2, '2010-03-28'),
+(2, 3, '2012-04-25'),
+(3, 3, '2014-11-03'),
+(4, 1, '2015-10-05'),
+(5, 1, NULL)
+
+
+
+2. Augmentez de 10% tous les prix des analyses.
+
+UPDATE typeanalyse
+SET prixTypeAnalyse = prixTypeAnalyse * 1.1
+/* WHERE prixTypeAnalyse */
+
+
+3. Il a été défini un prix plancher (prix minimum) de 80 € pour toutes les analyses.
+Mettez à jour la table TYPEANALYSE.
+
+
+UPDATE typeanalyse 
+SET prixTypeAnalyse = prixTypeAnalyse = 80
+WHERE prixTypeAnalyse < 80
+
+
+4. Aujourd'hui, toutes les analyses en cours ont été réalisées. Mettez à jour la table
+« Réaliser » en mettant la date du jour à toutes les entrées.
+
+UPDATE realiser
+SET dateRealisation = DATE(NOW())
+WHERE dateRealisation IS NULL
+
+5. Le client dont le code est "id1" vient de fournir son numéro de téléphone (0611111111). Mettre à jour la table correspondante.
+UPDATE `client`
+
+UPDATE `client`
+SET tel = 0611111111
+WHERE codeClient = "id2"
+
+
+6. Suite à un bug informatique, des entrées ont été saisies le 01 février 2007 au lieu du 1er février 2006. Mettez à jour la base.
+UPDATE echantillon
+
+
+UPDATE echantillon
+SET dateEntree = '2006-02-01'
+WHERE dateEntree = '2007-02-01'
+
+
+7. Afin de préparer la nouvelle campagne, de nouvelles analyses ont été définies.
+Ces nouvelles analyses sont disponibles dans une table ANALYSECOLYSTEROL 
+dont la structure (champs, types de donnée) est identique à TYPEANALYSE. 
+Mettez à jour la table TYPEANALYSE à partir de la table ANALYSECOLYSTEROL.
+
+
+
+CREATE TABLE IF NOT EXISTS `ANALYSECOLYSTEROL` (
+  `refTypeAnalyse` int(8) NOT NULL AUTO_INCREMENT,
+  `designation` varchar(50) DEFAULT NULL,
+  `prixTypeAnalyse` float DEFAULT NULL,
+  PRIMARY KEY (`refTypeAnalyse`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+INSERT INTO ANALYSECOLYSTEROL (designation, prixTypeAnalyse)
+VALUES
+("type4", 100.50),
+("type5", 150.50),
+("type6", 200.50);
+
+
+INSERT INTO typeanalyse
+SELECT refTypeAnalyse,designation,prixTypeAnalyse
+FROM analysecolysterol
+
+/* Version Stephane */
+/* 
+   INSERT INTO typeanalyse (designation, prixTypeAnalyse)
+   SELECT designation,prixTypeAnalyse
+   FROM analyseColysterol
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
