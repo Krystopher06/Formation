@@ -1,0 +1,3 @@
+https://www.youtube.com/watch?v=6aX6C-yqQCk
+http://fulltotech.info/2019/02/limit-number-of-login-attempt-using-php-mysql/
+http://www2.hawaii.edu/~takebaya/cent285/limiting_failed_attempts/limiting_failed_attempts.html
